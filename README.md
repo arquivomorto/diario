@@ -1,5 +1,7 @@
 # Diário
 
-Pequeno diário com banco em SQLite, só baixar e rodar.
+Pequeno diário com banco em SQLite.
+
+## Tela
 
 ![Screenshot](eventos.png)
