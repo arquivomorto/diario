@@ -2,6 +2,6 @@
 
 Pequeno diário com banco em SQLite.
 
-## Tela
+## Tela principal
 
 ![Screenshot](eventos.png)
