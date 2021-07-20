@@ -1,0 +1,8 @@
+BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS `eventos` (
+	`id`	INTEGER PRIMARY KEY AUTOINCREMENT,
+	`evento`	TEXT,
+	`detalhes`	TEXT,
+	`criado_em`	INTEGER
+);
+COMMIT;
