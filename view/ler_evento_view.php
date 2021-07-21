@@ -8,7 +8,7 @@
         <h2><?php print htmlentities($evento['evento']);?></h2>
         <i><?php print date("d.M.Y H:i", $evento['criado_em']);?></i><br><br>
         <?php
-        print nl2br($evento['detalhes']);
+        print nl2br(htmlentities($evento['detalhes']));
         ?><br><br>
         <a href="index.php">Página inicial</a>
     </div>

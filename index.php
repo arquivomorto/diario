@@ -6,4 +6,4 @@ $where=[
     'ORDER'=>['id'=>'DESC']
 ];
 $eventos = $db->select("eventos","*",$where);
-require 'view/index_view.php';
+require 'view/pagina_inicial_view.php';
