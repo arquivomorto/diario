@@ -2,8 +2,8 @@
 <head>
 <title>Diário</title>
 </head>
-<body>
-    <div style="width:400px;margin:0 auto;">
+<body style="text-align:center;">
+    <div style="width:600px;margin:0 auto;text-align:left">
         <h1>Diário</h1>
         <form method="post" action="criar_evento.php">
             <label for="evento">Evento</label><br>
