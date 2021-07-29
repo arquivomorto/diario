@@ -12,14 +12,18 @@
             <textarea id="detalhes" name="detalhes" style="width:100%;" rows="5"></textarea><br><br>
             <button type="submit">Criar</button>
         </form>
-        <h3>Eventos</h2>
         <?php
         if($eventos){
+            print '<h3>Eventos</h2>';
             print '<ul>';
             foreach($eventos as $evento){
-                $data=date("d.M.Y H:i", $evento['criado_em']);
                 $href="ler_evento.php?id=".$evento['id'];
-                $link="<a href='".$href."'>".$evento['evento'].'</a>';
+                $data=date("d.M.Y H:i", $evento['criado_em']);
+                $data= "<a style='text-decoration:none;color:inherit;' href='".$href."'>".$data.'</a>';                 
+                $link="<a href='".$href."'>".$evento['evento'].'</a>';                
+                if(empty($evento['detalhes'])){
+                    $link='<b>'.strip_tags($link).'</b>';
+                }
                 print '<li>'.$data.' '.$link.'</li>';
             }
             print '</ul>';
