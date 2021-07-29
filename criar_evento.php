@@ -1,12 +1,9 @@
 <?php
-$exibir_erros = require 'inc/exibir_erros.php';
-$exibir_erros(true);
 if(file_exists('cfg.php')){
-    $cfg = require 'cfg.php';
+    require 'cfg.php';
 }else{
-    $cfg = require 'cfg.exemplo.php';
+    require 'cfg.exemplo.php';
 }
-$db=require 'inc/db.php';
 $data=[
     'evento'=>$_POST['evento'],
     'detalhes'=>$_POST['detalhes'],
