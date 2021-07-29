@@ -8,9 +8,10 @@
         <h2><?php print htmlentities($evento['evento']);?></h2>
         <i><?php print date("d.M.Y H:i", $evento['criado_em']);?></i><br><br>
         <?php
-        print nl2br(htmlentities($evento['detalhes']));
         if(!empty($evento['detalhes'])){
-            print '<br><br>';
+            print '<pre style="white-space:pre-wrap;word-wrap:break-word;font-size:14px;">';
+            print nl2br(htmlentities($evento['detalhes']));        
+            print '</pre><br>';
         }
         ?>
         <a href="index.php">Página inicial</a>
