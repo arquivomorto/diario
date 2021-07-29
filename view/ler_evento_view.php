@@ -3,7 +3,7 @@
 <title><?php print htmlentities ($evento['evento']);?></title>
 </head>
 <body style="text-align:center;">
-    <div style="width:600px;margin:0 auto;text-align:left">
+    <div style="width:<?php print $cfg['page']['width'];?>;margin:0 auto;text-align:left">
         <h1><a href="index.php">Diário</a></h1>
         <h2><?php print htmlentities($evento['evento']);?></h2>
         <i><?php print date("d.M.Y H:i", $evento['criado_em']);?></i><br><br>

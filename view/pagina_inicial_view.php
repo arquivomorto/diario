@@ -3,7 +3,7 @@
 <title>Diário</title>
 </head>
 <body style="text-align:center;">
-    <div style="width:600px;margin:0 auto;text-align:left">
+    <div style="width:<?php print $cfg['page']['width'];?>;margin:0 auto;text-align:left">
         <h1>Diário</h1>
         <form method="post" action="criar_evento.php">
             <label for="evento">Evento</label><br>
@@ -14,7 +14,7 @@
         </form>
         <?php
         if($eventos){
-            print '<h3>Eventos</h2>';
+            print '<h2>Eventos</h2>';
             print '<ul>';
             foreach($eventos as $evento){
                 $href="ler_evento.php?id=".$evento['id'];
