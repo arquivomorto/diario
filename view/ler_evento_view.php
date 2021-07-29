@@ -11,7 +11,7 @@
         <?php
         if(!empty($evento['detalhes'])){
             print '<pre style="white-space:pre-wrap;word-wrap:break-word;font-size:14px;">';
-            print nl2br(htmlentities($evento['detalhes']));        
+            print htmlentities($evento['detalhes']);        
             print '</pre><br>';
         }
         ?>
