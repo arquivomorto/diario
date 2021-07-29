@@ -6,9 +6,9 @@ require 'vendor/autoload.php';
 
 use Medoo\Medoo;
 
-if(isset($cfg)){
+if (isset($cfg)) {
     return new Medoo($cfg['db']);
-}else{
+} else {
     return new Medoo([
         'database_type' => 'sqlite',
         'database_file' => './db/db.db'
