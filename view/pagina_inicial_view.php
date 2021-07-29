@@ -1,9 +1,10 @@
-<html>
+<!DOCTYPE html>
 <head>
+<meta name="viewport" content="width=device-width; user-scalable=0" />
 <title>Diário</title>
 </head>
 <body style="text-align:center;">
-    <div style="width:<?php print $cfg['page']['width'];?>;margin:0 auto;text-align:left">
+    <div style="width:<?php print $cfg['page']['width'];?>;margin:0 auto;text-align:left;max-width:100%;">
         <h1>Diário</h1>
         <form method="post" action="criar_evento.php">
             <label for="evento">Evento</label><br>
