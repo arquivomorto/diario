@@ -5,7 +5,7 @@ $cfg = [
         'database_file' => './db/db.db'
     ],
     'page'=>[
-        'width'=>'600px'
+        'width'=>'700px'
     ]
 ];
 $exibir_erros = require 'inc/exibir_erros.php';
