@@ -11,7 +11,7 @@
             <label for="evento">Evento</label><br>
             <input id="evento" type="text" name="evento" size="35" style="font-family:monospace" maxlength="<?php print $cfg['page']['evento'];?>"><br>
             <label for="detalhes">Detalhes</label><br>
-            <textarea id="detalhes" name="detalhes" cols="69" rows="5" maxlength="<?php print $cfg['page']['detalhes'];?>"></textarea><br><br>
+            <textarea id="detalhes" name="detalhes" style="overflow:hidden" cols="69" rows="5" maxlength="<?php print $cfg['page']['detalhes'];?>"></textarea><br><br>
             <button type="submit">Criar</button>
         </form>
         </center>
