@@ -17,7 +17,7 @@
         </center>
         <?php
         if($eventos){
-            print '<h2>Eventos</h2>';
+            print '<center><h2>Eventos</h2></center>';
             print '<ul>';
             foreach($eventos as $evento){
                 $href="ler_evento.php?id=".$evento['id'];

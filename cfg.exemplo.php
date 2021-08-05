@@ -7,7 +7,7 @@ $cfg = [
     'page'=>[
         'evento'=>'35',
         'detalhes'=>'350',
-        'width'=>'600px'
+        'width'=>'560px'
     ]
 ];
 $exibir_erros = require 'inc/exibir_erros.php';
