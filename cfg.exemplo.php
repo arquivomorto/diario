@@ -5,6 +5,8 @@ $cfg = [
         'database_file' => './db/db.db'
     ],
     'page'=>[
+        'evento'=>'35',
+        'detalhes'=>'350',
         'width'=>'600px'
     ]
 ];

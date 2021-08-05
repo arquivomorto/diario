@@ -5,14 +5,16 @@
 </head>
 <body style="text-align:center;">
     <div style="width:<?php print $cfg['page']['width'];?>;margin:0 auto;text-align:left;max-width:100%;">
+        <center>
         <h1>Diário</h1>
         <form method="post" action="criar_evento.php">
             <label for="evento">Evento</label><br>
-            <input id="evento" type="text" name="evento" style="width:100%;" maxlength="40"><br>
+            <input id="evento" type="text" name="evento" size="35" style="font-family:monospace" maxlength="<?php print $cfg['page']['evento'];?>"><br>
             <label for="detalhes">Detalhes</label><br>
-            <textarea id="detalhes" name="detalhes" style="width:100%;" rows="5" maxlength="400"></textarea><br><br>
+            <textarea id="detalhes" name="detalhes" cols="69" rows="5" maxlength="<?php print $cfg['page']['detalhes'];?>"></textarea><br><br>
             <button type="submit">Criar</button>
         </form>
+        </center>
         <?php
         if($eventos){
             print '<h2>Eventos</h2>';
