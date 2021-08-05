@@ -10,7 +10,7 @@
         <i><?php print date("d.M.Y H:i", $evento['criado_em']);?></i><br><br>
         <?php
         if(!empty($evento['detalhes'])){
-            print '<pre style="white-space:pre-wrap;word-wrap:break-word;font-size:14px;">';
+            print '<pre>';
             print htmlentities($evento['detalhes']);        
             print '</pre><br>';
         }
