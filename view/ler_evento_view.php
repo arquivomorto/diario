@@ -10,12 +10,15 @@
         <i><?php print date("d.M.Y H:i", $evento['criado_em']);?></i><br><br>
         <?php
         if(!empty($evento['detalhes'])){
-            print '<pre>';
+            print '<pre style="width: 100%;overflow: auto;padding-bottom:1.5em;">';
             print htmlentities($evento['detalhes']);        
-            print '</pre><br>';
+            print '</pre>';
         }
         ?>
         <a href="index.php">Página inicial</a>
     </div>
 </body>
 </html>
+
+
+
