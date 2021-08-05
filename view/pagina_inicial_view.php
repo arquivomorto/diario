@@ -8,9 +8,9 @@
         <h1>Diário</h1>
         <form method="post" action="criar_evento.php">
             <label for="evento">Evento</label><br>
-            <input id="evento" type="text" name="evento" style="width:100%;" maxlength="50"><br>
+            <input id="evento" type="text" name="evento" style="width:100%;" maxlength="40"><br>
             <label for="detalhes">Detalhes</label><br>
-            <textarea id="detalhes" name="detalhes" style="width:100%;" rows="5" maxlength="500"></textarea><br><br>
+            <textarea id="detalhes" name="detalhes" style="width:100%;" rows="5" maxlength="400"></textarea><br><br>
             <button type="submit">Criar</button>
         </form>
         <?php
